@@ -160,6 +160,7 @@ background-color: #FFFFFF;
     padding: 20px;
 }
 
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     #header {
@@ -277,5 +278,76 @@ background-color: #FFFFFF;
     #button2 {
         font-size: 18px;
         padding: 15px 40px;
+    }
+}
+
+
+/* General Form Styling */
+form {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the form */
+    max-width: 400px; /* Maximum width of the form */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+/* Close Button */
+form .close {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #555; /* Medium grey color */
+    float: right; /* Position to the right */
+    cursor: pointer; /* Show a pointer cursor */
+    margin-top: -10px; /* Adjust position */
+    margin-right: -10px; /* Adjust position */
+}
+
+/* Label Styling */
+form label {
+    display: block; /* Block layout */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: 600; /* Semi-bold text */
+    color: #333; /* Dark grey text */
+}
+
+/* Input Fields */
+form .form-input {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Space inside the input */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color:#1f2937; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 16px; /* Slightly larger font */
+}
+
+/* Submit Button Hover Effect */
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    form {
+        padding: 15px; /* Reduce padding on small screens */
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    form .close {
+        font-size: 20px; /* Smaller close button */
     }
 }
