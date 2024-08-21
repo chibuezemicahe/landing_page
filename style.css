@@ -1,0 +1,281 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+ :root{
+    --primary-color:#ffffff;
+    --secondary-color:#b2831f;
+    --background-color:var(--primary-color);
+    --primary-font:"Poppins", sans-serif;
+ }
+ body {
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    flex-direction: column;
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /* This will space out the logo and navigation */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    margin: 10px;
+    padding: 10px;
+    color:#333333;
+}
+
+#inner-header-1 img {
+    margin-right: 20px; 
+    max-width: 100px; 
+    border-radius: 20px;
+    /* Adds some space between the logo and the navigation */
+}
+.YT{
+    width:420;
+    height:315;
+}
+.inner-header-1 {
+    margin: 10px; /* Adds space between each navigation item */
+    cursor: pointer;
+    padding: 10px;
+    border-color: #b2831f;
+    border-style: dotted;
+  }
+  .button-link{
+    text-decoration: none; 
+  }
+  .inner-header-1:hover{
+    background-color: #b2831f;
+  }
+
+  #main-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #description-section{
+    background-color: black;
+    display: flex;
+  }
+  #description-content{
+    flex: 1; /* Allow the content to occupy half the space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding: 10px; /* Add some padding for aesthetics */
+    margin: 30px;
+  }
+
+  #description-section iframe{
+    flex: 1; /* Allow the iframe to occupy half the space */
+    border-color: aliceblue;
+    border-style: dotted;
+    margin: 30px;
+  }
+
+  .know{
+    margin: auto;
+  }
+  #know-p{
+    padding: auto;
+    word-spacing: 3px;
+  }
+
+  #button1{
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+  }
+  #button1:hover{
+    background-color: white;
+    color: #b2831f;
+  }
+
+  #content-sect{
+background-color: white;
+color: black;
+
+padding: 10px;
+  }
+  #micah-vid-section{
+    text-align: center;
+  }
+  #quote {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+#quote span {
+    color: #b2831f; /* This gives a subtle highlight to the author's name */
+    font-weight: bold;
+  
+}
+
+#contact-me{
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-me-p{
+    background-color: #b2831f;
+    color: black;
+    padding: 20px;
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Align items at opposite ends */
+    align-items: center; /* Vertically center items */
+    margin: 50px;
+    border-radius: 10px;
+}
+
+#button2{
+    padding: 20px 50px; /* Increase the horizontal padding */
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+#button2:hover{
+background-color: #FFFFFF;
+}
+
+#contact-me-message{
+    padding: 20px 50px; /* Increase the horizontal padding */
+    font-size: 20px;
+    color: #FFFFFF;
+}
+#footer{
+    background-color: #1f2937;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        align-items: center;
+    }
+
+    #inner-header-1 img {
+        margin-right: 0; /* Remove extra margin on smaller screens */
+        margin-bottom: 10px; /* Add margin below the logo */
+    }
+
+    .inner-header-1 {
+        margin: 5px 0; /* Reduce space between navigation items */
+        padding: 8px;
+        font-size: 14px; /* Smaller text on small screens */
+    }
+
+    #main-content {
+        flex-direction: column; /* Stack content vertically on small screens */
+        padding: 10px;
+    }
+
+    #description-section {
+        flex-direction: column; /* Stack text and iframe vertically */
+        align-items: center;
+    }
+
+    #description-content {
+        
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding: 10px; /* Add some padding for aesthetics */
+    margin: 30px;
+    }
+
+    #description-section iframe {
+        width: 100%; /* Make iframe full-width on mobile */
+        margin: 10px 0; /* Reduce margin */
+        height: auto; /* Adjust height based on width */
+    }
+
+    #content-sect {
+        padding: 10px;
+    }
+
+    #content-sect span {
+        display: block; /* Stack videos vertically */
+        width: 100%;
+        margin-bottom: 20px; /* Add margin between videos */
+    }
+
+    #quote {
+        padding: 15px;
+    }
+
+    #contact-me-p {
+        flex-direction: column; /* Stack contact message and button */
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+    }
+
+
+    .know {
+        margin: 10px 0; /* Adjust margin to reduce space taken */
+    }
+
+    #button1 {
+        padding: 15px; /* Reduce button size */
+        font-size: 14px; /* Reduce font size */
+    }
+    #button2 {
+        margin-top: 20px; /* Add margin to space out button from text */
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    #footer {
+        padding: 15px;
+        font-size: 14px; /* Smaller text for footer on mobile */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #header {
+        padding: 10px 15px; /* Adjust padding for tablet */
+    }
+
+    .inner-header-1 {
+        padding: 8px;
+        font-size: 16px; /* Adjust font size for tablet */
+    }
+
+    #description-content {
+        margin: 20px 10px; /* Adjust margin */
+    }
+
+    #description-section iframe {
+        width: 100%; /* Make iframe full-width */
+        height: auto;
+    }
+
+    #content-sect {
+        padding: 15px;
+    }
+
+    #contact-me-p {
+        padding: 20px 10px;
+        margin: 30px;
+    }
+
+    #button2 {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+}
